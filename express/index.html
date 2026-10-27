@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Latvia</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Discover Latvia</h1>
+    <p>Atklāj skaistākās vietas Latvijā!</p>
+    <button id="themeButton" type="button">
+      Mainīt tēmu
+    </button>
+  </header>
+
+  <main>
+    <div>
+      <h2>Rīga</h2>
+      <p>
+        Latvijas galvaspilsēta ar vēsturisku vecpilsētu,
+        skaistiem parkiem un iespaidīgu arhitektūru.
+      </p>
+    </div>
+
+    <div>
+      <h2>Jūrmala</h2>
+      <p>
+        Pilsēta pie jūras, kur baudīt smilšu pludmales,
+        pastaigas un atpūtu dabā.
+      </p>
+    </div>
+
+    <div>
+      <h2>Sigulda</h2>
+      <p>
+        Vieta, kur iepazīt Gaujas senleju,
+        vēsturiskas pilis un dabas takas.
+      </p>
+    </div>
+    <div>
+      <h2>Ceļojuma padomi</h2>
+        
+      <button id="tipsButton" type="button" aria-expanded="false">
+        Rādīt padomus
+      </button>
+    
+      <p id="tips" hidden>
+        Pirms ceļojuma pārbaudi laikapstākļus,
+        izvēlies ērtus apavus un saplāno savu maršrutu.
+      </p>
+    </div>
+    
+    <div>
+      <h2>Izvēlies galamērķi</h2>
+    
+      <label for="destination">Ko vēlies apmeklēt?</label>
+    
+      <select id="destination">
+        <option value="">Izvēlies pilsētu</option>
+        <option value="riga">Rīga</option>
+        <option value="jurmala">Jūrmala</option>
+        <option value="sigulda">Sigulda</option>
+      </select>
+    
+      <p id="recommendation" aria-live="polite">
+        Izvēlies pilsētu, lai saņemtu ieteikumu.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>TSI laboratorijas darbs Nr. 1</p>
+  </footer>
+<script src="/js/script.js"></script>
+</body>
+</html>
